@@ -239,6 +239,7 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-link .link:focus,
 .footer-link .link:hover {
   background-color: var(--accent-text-color);
 }
@@ -538,6 +539,7 @@ ul {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-card-link .link:focus, 
 .footer-card-link .link:hover {
   color: var(--another-text-color);
   background-color: var(--accent-text-color);
@@ -582,6 +584,7 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.company-item .link:focus,
 .company-item .link:hover {
   fill: var(--accent-text-color);
   border: 1px solid var(--accent-text-color);
