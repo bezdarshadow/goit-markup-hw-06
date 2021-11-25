@@ -773,6 +773,12 @@ ul {
   border-radius: 50%;
   color: #212121;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal .button-modal:hover,
+.modal .button-modal:focus{
+  color: var(--accent-text-color);
 }
 
 .close-btn {
@@ -789,6 +795,12 @@ ul {
   display: flex;
   width: 570px;
 }
+
+.form-footer{
+  display: flex;
+  align-items: flex-end;
+}
+
 
 .form-button {
   display: flex;
@@ -866,7 +878,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.field:last-child{
+.field:nth-child(5){
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -883,6 +895,7 @@ ul {
 }
 
 .input-modal-form{
+  outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
@@ -891,6 +904,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon{
@@ -904,6 +918,7 @@ ul {
 }
 
 .modal-textarea{
+  outline: none;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -913,6 +928,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-heading{
@@ -935,17 +951,13 @@ color: var(--main-text-color)
 
 .agreement-link{
   color: var(--main-text-color);
-  text-decoration: none;
-  border-bottom: 1px solid var(--main-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 5px;
 }
 
 .agreement-link:hover,
 .agreement-link:focus{
   color: var(--accent-text-color);
-  border-bottom: 1px solid var(--accent-text-color);
 }
 
 
@@ -978,6 +990,10 @@ color: var(--main-text-color)
   border: 1px solid var(--accent-text-color);
 }
 
+.field:focus-within .modal-textarea{
+  border: 1px solid var(--accent-text-color);
+}
+
 .field:focus-within .modal-icon{
   fill: var(--accent-text-color);
 }
@@ -1006,4 +1022,9 @@ color: var(--main-text-color)
   fill: var(--another-text-color);
   background-color: var(--accent-text-color);
   border: transparent;
+}
+
+
+.button-modal-container{
+  display: flex;
 }
